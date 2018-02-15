@@ -1,0 +1,9 @@
+my-todo-item {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+my-todo-item:not(:last-child) {
+	margin-bottom: 10px;
+}

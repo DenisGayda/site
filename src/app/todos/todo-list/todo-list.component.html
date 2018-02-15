@@ -1,0 +1,5 @@
+<div class="ui raised segment" *ngIf="todos.length > 0">
+	<div id="todos" class="ui middle aligned divided selection list">
+		<my-todo-item *ngFor="let todo of sortedTodos" [todo]="todo" (deleted)="onTodoDeleted($event)" (toggled)="onTodoToggled($event)" (updated)="onTodoUpdated($event)"></my-todo-item>
+	</div>
+</div>

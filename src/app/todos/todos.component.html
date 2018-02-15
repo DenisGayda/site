@@ -1,0 +1,2 @@
+<my-todo-form (created)="onTodoCreated($event)" [todo]="updateTodo"></my-todo-form>
+<my-todo-list [todos]="todos" (toggled)="onTodoToggled($event)" (updated)="onTodoUpdated($event)" (deleted)="onTodoDeleted($event)"></my-todo-list>

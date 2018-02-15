@@ -1,0 +1,6 @@
+<div class="ui segment form">
+	<div class="ui fluid action input">
+		<input type="text" id="title" name="title" placeholder="What need do?" (keyup.enter)="create(titleInput.value); titleInput.value=''" #titleInput value="{{title}}">
+		<button id="add" type="button" class="ui primary button" (click)="create(titleInput.value); titleInput.value=''">{{ textButton }}</button>
+	</div>
+</div>
